@@ -82,6 +82,7 @@ header img{
 }
 
 header img#pizza{
+  width: 55%;
   bottom: 0px;
 }
 header img#sag-ust{
@@ -118,7 +119,7 @@ header img#sol-alt{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   transition: transform 0.3s ease;
 }
 
@@ -129,10 +130,11 @@ header img#sol-alt{
 .ust-menu nav div a{
   text-decoration: none;
   color: black;
+  font-size: 1rem;
 }
 
 .siparis-ver{
-  width: 44.5vw;
+  width: 50vw;
   display: flex;
   margin: 2rem;
 }
@@ -142,62 +144,177 @@ header img#sol-alt{
   width: 50%;
   position: relative;
   border-radius: 2rem;
+  overflow: hidden;
 }
 .siparis-ver .ozel-lezzetus img{
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  border-radius: 2rem;
+position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 
 }
 
 .siparis-ver .ozel-lezzetus .sol-yazi{
-  margin-top: 3rem;
-  margin-left: 3rem;
-  margin-right: 0px;
-  margin-bottom: s0px;
-
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2px;
+  position: relative; 
+  z-index: 10;
 }
 
 .siparis-ver .ozel-lezzetus .sol-yazi h1{
   color: white;
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: 0px;
 }
 
 .siparis-ver .ozel-lezzetus .sol-yazi p{
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
 .siparis-ver .ozel-lezzetus .sol-yazi button{
   color: #CE2829;
   background-color: white;
-  font-size: 1rem;
+  font-size: 0.7rem;
   border-radius: 3rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
+  transition:transform 0.3s ease;
 }
+.siparis-ver .ozel-lezzetus .sol-yazi button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 
 .sag-taraf{
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  gap: 1rem;
+  align-items: stretch;
   justify-content: center;
+  width: 50%;
+  height: 50%;
 }
 
 .sag-taraf div{
-
   height: 50%;
 }
 
 .sag-taraf .hackathlon{
   background-color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  position: relative; 
+  overflow: hidden;
 }
 
+.sag-taraf .hackathlon .hack-yazilar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  position: relative; 
+  z-index: 10;
+  margin-top: 1rem;
+}
+
+.sag-taraf .hackathlon .hack-yazilar h1{
+  font-family: "Barlow", sans-serif; 
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: white;
+}
+.sag-taraf .hackathlon .hack-yazilar button{
+  color: #CE2829;
+  background-color: white;
+  font-size: 0.7rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  transition:transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+.sag-taraf .hackathlon .hack-yazilar button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
 .sag-taraf .hackathlon img{
-  width: 20%;
+  position: absolute;
+  top:1.5rem;
+  right: 3rem;
+  height: 70%;
+  width: auto;  
+}
+
+.kurye {
+  background-color: #d3850749; /* Arka plan rengi */
+  /* Eğer elinde şehir çizimi olan background resmi varsa buraya ekleyebilirsin: */
+  background-image: url("images/b205d24a40ed8009ff8742ced4cebd1f21b6c436 (3).png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  border-radius: 2rem;
+  position: relative;
+
+  overflow: hidden; 
+  justify-content: stretch;
+  align-items: center; /* Dikeyde ortala */
+  padding-left: 2rem;  
+}
+
+.kurye .kurye-yazilar{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  align-items: flex-start; /* ÖNEMLİ: Butonu sola yaslar, sündürmez */
+  margin-top: 2rem;
+}
+
+
+.kurye h1 {
+  font-family: "Barlow", sans-serif; 
+  font-size: 1.3rem;
+  color: #292929;
+  margin-bottom: 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+.kurye h1 span {
+  color: #CE2829; 
+}
+
+.kurye button {
+  color: #CE2829;
+  background-color: white;
+  font-size: 0.7rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  transition:transform 0.3s ease;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.kurye button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.kurye img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80%; 
 }
