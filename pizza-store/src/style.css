@@ -1,0 +1,203 @@
+body{
+  margin: 0;
+  background-color: rgb(234, 226, 226);
+}
+.wrapper{
+  max-width: 800px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header{
+  background-color:#CE2829 ;
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 45vh;
+  background-image: url("images/a77035a9df7ba412f5e1582f8e31e2e22182bd40.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .teknolojik-yemekler{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin: 2rem;
+  color: white ;
+}
+
+header .firsati-kacirma{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDC913;
+  margin-top: 2rem;
+  font-size: 2rem;
+
+}
+
+header .aciktirir-doyurur{
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5rem;
+  color: white;
+}
+
+header button{
+  color: rgba(0, 0, 0, 0.545);
+  background-color: #FDC913;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+header button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+header img{
+  position: absolute;
+}
+
+header img#pizza{
+  bottom: 0px;
+}
+header img#sag-ust{
+  top: 0px;
+  right: 0px;
+}
+
+header img#sol-alt{
+  bottom: 0px;
+  left: 0px;
+}
+
+.ust-menu{
+  background-color: white;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ust-menu nav{
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.ust-menu nav div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.ust-menu nav div:hover{
+  transform: scale(1.2);
+}
+
+.ust-menu nav div a{
+  text-decoration: none;
+  color: black;
+}
+
+.siparis-ver{
+  width: 44.5vw;
+  display: flex;
+  margin: 2rem;
+}
+
+.siparis-ver .ozel-lezzetus{
+  background-color: #CE2829;
+  width: 50%;
+  position: relative;
+  border-radius: 2rem;
+}
+.siparis-ver .ozel-lezzetus img{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 2rem;
+  width: 100%;
+
+}
+
+.siparis-ver .ozel-lezzetus .sol-yazi{
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 0px;
+  margin-bottom: s0px;
+
+}
+
+.siparis-ver .ozel-lezzetus .sol-yazi h1{
+  color: white;
+  font-size: 4rem;
+  margin-top: 0px;
+}
+
+.siparis-ver .ozel-lezzetus .sol-yazi p{
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.siparis-ver .ozel-lezzetus .sol-yazi button{
+  color: #CE2829;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+}
+
+.sag-taraf{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sag-taraf div{
+
+  height: 50%;
+}
+
+.sag-taraf .hackathlon{
+  background-color: #292929;
+}
+
+.sag-taraf .hackathlon img{
+  width: 20%;
+}
