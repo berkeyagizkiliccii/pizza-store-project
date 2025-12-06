@@ -257,8 +257,8 @@ position: absolute;
 }
 
 .kurye {
-  background-color: #d3850749; /* Arka plan rengi */
-  /* Eğer elinde şehir çizimi olan background resmi varsa buraya ekleyebilirsin: */
+  background-color: #d3850749; 
+ 
   background-image: url("images/b205d24a40ed8009ff8742ced4cebd1f21b6c436 (3).png");
   background-size: cover;
   background-position: center;
@@ -268,7 +268,7 @@ position: absolute;
 
   overflow: hidden; 
   justify-content: stretch;
-  align-items: center; /* Dikeyde ortala */
+  align-items: center; 
   padding-left: 2rem;  
 }
 
@@ -277,7 +277,7 @@ position: absolute;
   flex-direction: column;
   position: relative;
   z-index: 10;
-  align-items: flex-start; /* ÖNEMLİ: Butonu sola yaslar, sündürmez */
+  align-items: flex-start;
   margin-top: 2rem;
 }
 
@@ -317,4 +317,208 @@ position: absolute;
   right: 0;
   bottom: 0;
   height: 80%; 
+}
+
+.paket{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #CE2829;
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.kodlar{
+  font-family: "Barlow", sans-serif; 
+  font-size: 2rem;
+  color: #292929;
+}
+
+.alt-menu nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
+.alt-menu nav div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.3rem 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.alt-menu nav div a{
+  text-decoration: none;
+  color: black;
+}
+
+.alt-menu nav div a:hover{
+  color: white;
+}
+
+.alt-menu nav div:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: #292929;
+}
+
+.uc-pizza{
+  display: flex;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pizzalar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.pizzalar:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.pizzalar img{
+  width: 80%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+
+
+
+.isim-fiyat{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 2rem;
+
+}
+
+.puan-fiyat{
+  display: flex;
+  justify-content: space-between
+}
+
+.satis-fiyat{
+  display: flex;
+  margin-right: 2rem;
+  display: flex;
+  gap: 3rem;
+  color: rgba(0, 0, 0, 0.545);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  color: rgba(255, 255, 255, 0.778);
+  background-color: #292929;
+}
+
+.footer-ust{
+  display: flex;
+  width: 50%;
+  gap: 4rem;
+}
+
+.ust-sol{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.ust-sol h1{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+.adres{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.adres i{
+  color: #FDC913;
+}
+.adres p{
+  transition: transform 0.3 ease;
+}
+.adres p:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.footer-head{
+  margin-top: 6rem;
+  color: white;
+}
+
+.ust-sag{
+  margin-top: 5rem;
+}
+
+.ust-sag h3{
+  color: white;
+}
+
+.fotolar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 0.5rem;
+}
+
+.footer-alt{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.ust-orta p{
+  transition: transform 0.3 ease;
+}
+
+.ust-orta p:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.fotolar img{
+  transition: transform 0.3s ease;
+}
+
+.fotolar img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.footer-alt i{
+  cursor: pointer;
+  transition:transform 0.3s ease;
+}
+
+.footer-alt i:hover{
+  transform: scale(1.3);
 }
